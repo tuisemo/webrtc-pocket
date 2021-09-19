@@ -1,0 +1,36 @@
+{
+  "name": "webrtc-pocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "eslint": "^7.32.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup --config rollup.config.dev.js -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuisemo/webrtc-pocket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuisemo/webrtc-pocket/issues"
+  },
+  "homepage": "https://github.com/tuisemo/webrtc-pocket#readme"
+}
