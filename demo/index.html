@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>WebRTC</title>
 </head>
+
 <body>
-	
+	<video id="video" style="height:800px;width:1200px"></video>
+	<div>
+		<button data-event="capture">开始采集</button>
+		<button data-event="mirror">镜像翻转</button>
+		<button data-event="save-pic">拍照保存</button>
+	</div>
+	<script src="./index.min.js"></script>
 </body>
+
 </html>

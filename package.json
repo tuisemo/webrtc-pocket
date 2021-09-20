@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "rollup.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "webrtc-adapter": "^8.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",

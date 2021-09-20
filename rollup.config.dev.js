@@ -11,16 +11,14 @@ const packages = require('./package.json')
 const ENV = process.env.NODE_ENV
 
 export default {
-  input: 'src/main.js',
+  input: ['demo/index.js'],
   external: [], // 告诉rollup，不打包**将其视为外部依赖
-  output: {
-    file: `dist/js/${packages.name}.min.js`,
-    format: 'umd',
-    name: 'bundle-name',
-    globals: {
-      // 这跟external 是配套使用的
+  output: [
+    {
+      file: `demo/index.min.js`,
+      format: 'iife'
     }
-  },
+  ],
   plugins: [
     resolve({
       jsnext: true,
@@ -41,11 +39,11 @@ export default {
       exclude: 'node_modules/**',
       ENV: JSON.stringify(process.env.NODE_ENV)
     }),
-	livereload(),
+    livereload(),
     serve({
       open: true,
       port: 8080,
-      contentBase: ['dist', 'demo'],
+      contentBase: ['dist', 'demo']
     })
   ]
 }
